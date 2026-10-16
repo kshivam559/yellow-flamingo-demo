@@ -1,4 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const caseStudy = document.querySelector("[data-case-study]");
+
+  if (caseStudy) {
+    const tracks = [...caseStudy.querySelectorAll("[data-case-study-track]")];
+    const previous = caseStudy.querySelector("[data-case-study-previous]");
+    const next = caseStudy.querySelector("[data-case-study-next]");
+    const slugs = [...(tracks[0]?.querySelectorAll("[data-case-study-slide]") ?? [])].map(
+      (slide) => slide.dataset.caseStudySlug
+    );
+    const slideCount = slugs.length;
+
+    const TRACK_TRANSITION = "transform 300ms ease-out";
+    let index = 0;
+
+    const render = () => {
+      tracks.forEach((track) => {
+        track.style.transition = TRACK_TRANSITION;
+        track.style.transform = `translateX(-${index * 100}%)`;
+      });
+    };
+
+    const goToSlug = (slug, scroll = true) => {
+      const targetIndex = slugs.indexOf(slug);
+      if (targetIndex === -1) return;
+      index = targetIndex;
+      render();
+      if (scroll) caseStudy.scrollIntoView({ behavior: "smooth" });
+    };
+
+    previous?.addEventListener("click", () => {
+      index = (index - 1 + slideCount) % slideCount;
+      render();
+    });
+
+    next?.addEventListener("click", () => {
+      index = (index + 1) % slideCount;
+      render();
+    });
+
+    const initialSlug = window.location.hash.slice(1);
+    if (initialSlug) goToSlug(initialSlug, false);
+
+    window.addEventListener("hashchange", () => {
+      goToSlug(window.location.hash.slice(1));
+    });
+  }
+
   const gallery = document.querySelector("[data-gallery]");
 
   if (gallery) {

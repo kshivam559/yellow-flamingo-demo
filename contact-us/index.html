@@ -100,10 +100,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="/what-we-do/">What We Do</a></li>
 <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-8"><a href="/contact-us/" aria-current="page">Contact Us</a></li>
 <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="/our-clients/">Our Clients</a></li>
-<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="#">Case Studies</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="/case-studies/">Case Studies</a></li>
                         </nav>
 
-                        <a href="/contact/" class="inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
+                        <a href="/contact-us/" class="inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
                             Contact Us
                         </a>
                     </div>
@@ -126,7 +126,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                             <p class="font-sans text-sm font-medium tracking-[1.4px] text-snow uppercase">AKT London</p>
                             <p class="mt-4 font-display text-2xl leading-tight font-light text-snow">Retail readiness and
                                 wholesale foundations for a bodycare start-up on the rise</p>
-                            <a href="#" class="eyebrow text-underline mt-4 inline-block text-primary uppercase transition-colors duration-300 hover:text-primary/80">
+                            <a href="/case-studies/#akt-london" class="eyebrow text-underline mt-4 inline-block text-primary uppercase transition-colors duration-300 hover:text-primary/80">
                                 Read the case study
                             </a>
                         </div>
@@ -139,9 +139,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     <main id="main-content" role="main">
 <section class="relative flex h-72 w-full items-center justify-center overflow-hidden bg-charcoal">
-    <img src="/wp-content/themes/yellow-flamingo/assets/images/about-us.webp" alt="A flock of flamingos" class="absolute inset-0 h-full w-full object-cover">
+    <img src="/wp-content/themes/yellow-flamingo/assets/images/contact-us-hero.webp" alt="A flock of flamingos" class="absolute inset-0 h-full w-full object-cover">
 
-    <div class="absolute inset-0 h-72 opacity-50 bg-linear-89 from-black/0 to-black/60"></div>
+    <div class="absolute inset-0 h-72 opacity-80 bg-linear-89 from-black/20 to-black/60"></div>
 
     <h1 class="container absolute inset-x-0 bottom-0 z-10 mx-auto px-6 text-center font-display text-[5.5rem] leading-[0.85] font-light text-white/30 sm:px-10 sm:text-9xl lg:px-16 lg:text-[12rem] tracking-wide">
         Let's talk
@@ -167,13 +167,75 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </p>
 
                 <div class="pt-16 text-center lg:text-left">
-                    <a href="mailto:hello@yellowflamingo.co.uk" class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-15 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
-                        hello@yellowflamingo.co.uk
+                    <a href="mailto:hello@yellowflamingo.co.uk" class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-22 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
+                        Write to us
                     </a>
                 </div>
 
             </div>
         </div>
+    </div>
+</section>
+
+
+<section class="bg-snow">
+    <div class="container mx-auto w-full px-6 py-20 sm:px-10 lg:px-16">
+        <div class="mx-auto rounded-sm bg-stone p-10 sm:p-16">
+            <h2 class="font-display text-4xl leading-[1.05] font-light text-charcoal lg:text-6xl tracking-wide">Start a conversation.</h2>
+
+            <form class="mt-12" action="#" method="post">
+                <div class="grid gap-x-10 gap-y-10 sm:grid-cols-2">
+                    <div>
+                        <label for="contact-name" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Your name" class="w-full border-b border-charcoal/30 bg-transparent py-2 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="contact-email" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Your email address" class="w-full border-b border-charcoal/30 bg-transparent py-2 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="contact-brand" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Brand</label>
+                        <input type="text" id="contact-brand" name="brand" placeholder="Brand or business name" class="w-full border-b border-charcoal/30 bg-transparent py-2 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="contact-message" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Message</label>
+                        <textarea id="contact-message" name="message" rows="4" placeholder="Tell us a little about what you need" class="w-full resize-none border border-charcoal/30 bg-snow p-4 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none"></textarea>
+                    </div>
+                </div>
+
+                <div class="pt-12 text-center">
+                    <button type="submit" class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
+                        Send Enquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-stone">
+    <div class="container mx-auto w-full px-6 py-20 sm:px-10 lg:px-16">
+        <div class="text-center text-charcoal text-4xl lg:text-6xl font-light font-display leading-[1.2]">Follow the flamboyance.</div>
+        <p class="text-center text-charcoal text-sm font-medium font-sans uppercase leading-7 tracking-wider py-6">@yellow.flamingo</p>
+        <div class="pt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            <div class="">
+                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/1.webp">
+            </div>
+            <div class="">
+                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/2.webp">
+            </div>
+            <div class="">
+                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/3.webp">
+            </div>
+            <div class="">
+                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/4.webp">
+            </div>
+            <div class="">
+                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/5.webp">
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -194,7 +256,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                     Let's start a<br>
                     conversation
                 </h2>
-                <a href="/contact/" class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
+                <a href="/contact-us/" class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
                     Contact Us
                 </a>
             </div>
@@ -207,7 +269,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="/what-we-do/">What We Do</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-8"><a href="/contact-us/" aria-current="page">Contact Us</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="/our-clients/">Our Clients</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="#">Case Studies</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="/case-studies/">Case Studies</a></li>
                 </nav>
                 <div class="flex items-center gap-4">
                     <a href="https://www.instagram.com/yellow.flamingo/" target="_blank" rel="noopener noreferrer" class="text-primary transition-colors duration-300 hover:text-primary/80">
