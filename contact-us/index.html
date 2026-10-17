@@ -57,7 +57,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     </a>
 
     <header class="fixed inset-x-0 top-0 z-50">
-        <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 h-28 bg-linear-to-b from-black/60 to-black/0 z-10"></div>
+        <div id="header-bg" aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 h-28 bg-transparent transition-colors duration-300 z-10"></div>
 
         <div class="container relative z-10 mx-auto flex w-full items-center justify-between px-6 py-6 sm:px-10 lg:px-16 h-28">
                             <a href="/" class="flex shrink-0 items-center gap-1.5" aria-label="Yellow Flamingo — Home">
@@ -96,11 +96,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 <div class="pointer-events-none fixed inset-x-0 top-0 z-80 container mx-auto flex h-full items-center justify-center px-6 sm:px-10 lg:justify-start lg:px-16">
                     <div class="pointer-events-auto flex flex-col items-center gap-10 lg:items-start">
                         <nav aria-label="Primary" class="flex flex-col items-center gap-6 text-center sm:gap-4 [&amp;_a]:link-underline [&amp;_a]:font-display [&amp;_a]:text-4xl [&amp;_a]:font-light [&amp;_a]:leading-tight [&amp;_a]:text-snow [&amp;_a]:transition-colors [&amp;_a]:duration-300 [&amp;_a:hover]:text-primary [&amp;_li]:list-none sm:[&amp;_a]:text-5xl lg:items-start lg:text-left lg:[&amp;_a]:text-5xl">
-                            <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="/about-us/">About Us</a></li>
-<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="/what-we-do/">What We Do</a></li>
-<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-8"><a href="/contact-us/" aria-current="page">Contact Us</a></li>
-<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="/our-clients/">Our Clients</a></li>
-<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="/case-studies/">Case Studies</a></li>
+                            <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="/about-us/">About Us</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="/case-studies/">Case Studies</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="/our-clients/">Our Clients</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="/what-we-do/">What We Do</a></li>
                         </nav>
 
                         <a href="/contact-us/" class="inline-flex w-fit shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
@@ -143,7 +142,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
     <div class="absolute inset-0 h-72 opacity-80 bg-linear-89 from-black/20 to-black/60"></div>
 
-    <h1 class="container absolute inset-x-0 bottom-0 z-10 mx-auto px-6 text-center font-display text-[5.5rem] leading-[0.85] font-light text-white/30 sm:px-10 sm:text-9xl lg:px-16 lg:text-[12rem] tracking-wide">
+    <h1 class="container absolute inset-x-0 bottom-0 z-10 mx-auto px-6 text-left font-display text-[5.5rem] leading-[0.85] font-light text-white/30 sm:px-10 sm:text-9xl lg:px-16 lg:text-[12rem] tracking-wide">
         Let's talk
     </h1>
 
@@ -265,11 +264,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
             <div class="mt-8 grid grid-cols-2 grid-flow-col grid-rows-3 items-center gap-x-8 gap-y-6 sm:flex sm:flex-row sm:gap-y-3 sm:items-center sm:justify-between">
                 <nav aria-label="Footer" class="contents sm:flex sm:flex-wrap sm:items-center sm:gap-x-8 sm:gap-y-3 [&amp;_a]:font-sans [&amp;_a]:text-sm [&amp;_a]:font-medium [&amp;_a]:tracking-[1.4px] [&amp;_a]:text-snow [&amp;_a]:uppercase [&amp;_a]:transition-colors [&amp;_a]:duration-300 [&amp;_a:hover]:text-primary [&amp;_li]:list-none">
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="/about-us/">About Us</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="/what-we-do/">What We Do</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-8"><a href="/contact-us/" aria-current="page">Contact Us</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="/our-clients/">Our Clients</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="/case-studies/">Case Studies</a></li>
+                    <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="/about-us/">About Us</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="/what-we-do/">What We Do</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="/our-clients/">Our Clients</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="/case-studies/">Case Studies</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-27"><a href="/contact-us/" aria-current="page">Contact</a></li>
                 </nav>
                 <div class="flex items-center gap-4">
                     <a href="https://www.instagram.com/yellow.flamingo/" target="_blank" rel="noopener noreferrer" class="text-primary transition-colors duration-300 hover:text-primary/80">
@@ -297,9 +296,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <div class="container z-10 mx-auto mt-4 flex w-full flex-col items-center gap-3 px-6 pb-4 text-center font-sans text-[10px] font-medium tracking-[1px] text-cream/50 uppercase sm:flex-row sm:items-center sm:justify-between sm:px-10 sm:text-left lg:px-16">
         <p>@Yellow Flamingo 2026</p>
         <div class="flex items-center gap-6">
-            <a href="/privacy-policy/" class="transition-colors duration-300 hover:text-brass">Privacy Policy</a>
-            <a href="/cookies/" class="transition-colors duration-300 hover:text-brass">Cookies</a>
-            <a href="/terms-and-conditions/" class="transition-colors duration-300 hover:text-brass">Terms &amp;
+            <a href="/privacy-policy/" class="transition-colors duration-300">Privacy Policy</a>
+            <a href="/cookies/" class="transition-colors duration-300">Cookies</a>
+            <a href="/terms-and-conditions/" class="transition-colors duration-300">Terms &amp;
                 Conditions</a>
         </div>
     </div>

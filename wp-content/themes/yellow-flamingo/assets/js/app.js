@@ -197,6 +197,31 @@ document.addEventListener("DOMContentLoaded", () => {
     render();
   }
 
+  const headerBg = document.getElementById("header-bg");
+  const headerLogo = document.getElementById("header-logo");
+
+  if (headerBg || headerLogo) {
+    const SCROLL_THRESHOLD = 10;
+
+    const updateHeaderOnScroll = () => {
+      const isScrolled = window.scrollY > SCROLL_THRESHOLD;
+
+      if (headerBg) {
+        headerBg.classList.toggle("bg-transparent", !isScrolled);
+        headerBg.classList.toggle("bg-charcoal/70", isScrolled);
+      }
+
+      if (headerLogo) {
+        headerLogo.classList.toggle("opacity-0", !isScrolled);
+        headerLogo.classList.toggle("pointer-events-none", !isScrolled);
+        headerLogo.setAttribute("aria-hidden", String(!isScrolled));
+      }
+    };
+
+    updateHeaderOnScroll();
+    window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
+  }
+
   const menu = document.getElementById("primary-menu");
   const toggle = document.getElementById("menu-toggle");
 
