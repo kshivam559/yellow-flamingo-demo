@@ -48,6 +48,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <meta name="generator" content="WordPress 7.1.3">
 <link rel="canonical" href="/contact-us/">
 <link rel="shortlink" href="/?p=16">
+<link rel="stylesheet" id="wpforms-no-styles-css" href="/wp-content/plugins/wpforms-lite/assets/css/frontend/wpforms-no-styles.min.css?ver=2.0.2.2" media="all">
+
 </head>
 
 <body class="wp-singular page-template-default page page-id-16 wp-theme-yellow-flamingo gradient-bg">
@@ -56,7 +58,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         Skip to main content
     </a>
 
-    <header class="fixed inset-x-0 top-0 z-50">
+    <header class="site-header fixed inset-x-0 top-0 z-50">
         <div id="header-bg" aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 h-28 bg-transparent transition-colors duration-300 z-10"></div>
 
         <div class="container relative z-10 mx-auto flex w-full items-center justify-between px-6 py-6 sm:px-10 lg:px-16 h-28">
@@ -119,17 +121,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
                 </div>
 
                 <div class="pointer-events-none fixed inset-x-0 top-0 z-80 hidden h-full container mx-auto items-center justify-end px-6 sm:px-10 lg:flex lg:px-16">
-                    <div class="pointer-events-auto w-95 overflow-hidden rounded-sm bg-charcoal">
-                        <img src="/wp-content/themes/yellow-flamingo/assets/images/akt-london.webp" alt="" class="aspect-4/3 w-full object-cover">
-                        <div class="px-8 py-10">
-                            <p class="font-sans text-sm font-medium tracking-[1.4px] text-snow uppercase">AKT London</p>
-                            <p class="mt-4 font-display text-2xl leading-tight font-light text-snow">Retail readiness and
-                                wholesale foundations for a bodycare start-up on the rise</p>
-                            <a href="/case-studies/#akt-london" class="eyebrow text-underline mt-4 inline-block text-primary uppercase transition-colors duration-300 hover:text-primary/80">
+                                        <div class="pointer-events-auto w-95 overflow-hidden rounded-sm bg-charcoal">
+                                                    <img width="433" height="350" src="/wp-content/uploads/2026/10/clients-5.webp" class="aspect-4/3 w-full object-cover transition-transform duration-300 group-hover:scale-105 wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="/wp-content/uploads/2026/10/clients-5.webp 433w, /wp-content/uploads/2026/10/clients-5-300x242.webp 300w" sizes="(max-width: 433px) 100vw, 433px">                                                <div class="px-8 py-10">
+                            <p class="font-sans text-sm font-medium tracking-[1.4px] text-snow uppercase">
+                                Kevyn Aucoin                            </p>
+                            <p class="mt-4 font-display text-2xl leading-tight font-light text-snow">Luxury repositioning and retail strategy for a pioneering, legacy beauty brand.                            </p>
+                            <a href="/case-studies/#kevyn-aucoin" class="eyebrow text-underline mt-4 inline-block text-primary uppercase transition-colors duration-300 hover:text-primary/80">
                                 Read the case study
                             </a>
                         </div>
                     </div>
+                                    
                 </div>
             </div>
         </div>
@@ -181,34 +183,21 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <div class="container mx-auto w-full px-6 py-20 sm:px-10 lg:px-16">
         <div class="mx-auto rounded-sm bg-stone p-10 sm:p-16">
             <h2 class="font-display text-4xl leading-[1.05] font-light text-charcoal lg:text-6xl tracking-wide">Start a conversation.</h2>
-
-            <form class="mt-12" action="#" method="post">
-                <div class="grid gap-x-10 gap-y-10 sm:grid-cols-2">
-                    <div>
-                        <label for="contact-name" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Name</label>
-                        <input type="text" id="contact-name" name="name" placeholder="Your name" class="w-full border-b border-charcoal/30 bg-transparent py-2 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none">
-                    </div>
-                    <div>
-                        <label for="contact-email" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Email</label>
-                        <input type="email" id="contact-email" name="email" placeholder="Your email address" class="w-full border-b border-charcoal/30 bg-transparent py-2 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none">
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="contact-brand" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Brand</label>
-                        <input type="text" id="contact-brand" name="brand" placeholder="Brand or business name" class="w-full border-b border-charcoal/30 bg-transparent py-2 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none">
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="contact-message" class="block font-sans text-sm font-medium uppercase leading-7 tracking-wider text-charcoal">Message</label>
-                        <textarea id="contact-message" name="message" rows="4" placeholder="Tell us a little about what you need" class="w-full resize-none border border-charcoal/30 bg-snow p-4 font-sans text-base text-charcoal placeholder-charcoal/50 focus:border-charcoal focus:outline-none"></textarea>
-                    </div>
-                </div>
-
-                <div class="pt-12 text-center">
-                    <button type="submit" class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-20 py-5 font-sans text-sm font-medium tracking-[1.4px] text-charcoal uppercase transition-colors duration-300 hover:bg-primary/90">
-                        Send Enquiry
-                    </button>
-                </div>
-            </form>
+            <div class="yf-wpform mt-12">
+                <div class="wpforms-container wpforms-render-modern" id="wpforms-34"><form id="wpforms-form-34" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="34" method="post" enctype="multipart/form-data" action="/contact-us/" data-token="c6f37c547ddcc7efbecb6e7a37d33ae3" data-token-time="1792432295"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div id="wpforms-error-noscript" style="display: none;">Please enable JavaScript in your browser to complete this form.</div><div class="wpforms-field-container"><div id="wpforms-34-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><label class="wpforms-field-label" for="wpforms-34-field_1">Name <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="text" id="wpforms-34-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Your Name" aria-errormessage="wpforms-34-field_1-error" required></div><div id="wpforms-34-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2"><label class="wpforms-field-label" for="wpforms-34-field_2">Email <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email" id="wpforms-34-field_2" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][2]" placeholder="Your email address" spellcheck="false" aria-errormessage="wpforms-34-field_2-error" required></div><div id="wpforms-34-field_4-container" class="wpforms-field wpforms-field-text" data-field-id="4"><label class="wpforms-field-label" for="wpforms-34-field_4">Brand Name</label><input type="text" id="wpforms-34-field_4" class="wpforms-field-large" name="wpforms[fields][4]" placeholder="Brand or business name" aria-errormessage="wpforms-34-field_4-error"></div>		<div id="wpforms-34-field_5-container" class="wpforms-field wpforms-field-text" data-field-type="text" data-field-id="5">
+			<label class="wpforms-field-label" for="wpforms-34-field_5">Brand Name Name</label>
+			<input type="text" id="wpforms-34-field_5" class="wpforms-field-medium" name="wpforms[fields][5]">
+		</div>
+		<div id="wpforms-34-field_3-container" class="wpforms-field wpforms-field-textarea" data-field-id="3"><label class="wpforms-field-label" for="wpforms-34-field_3">Message</label><textarea id="wpforms-34-field_3" class="wpforms-field-large" name="wpforms[fields][3]" placeholder="Tell us a little about what you need" aria-errormessage="wpforms-34-field_3-error"></textarea></div><script>
+				( function() {
+					const style = document.createElement( 'style' );
+					style.appendChild( document.createTextNode( '#wpforms-34-field_5-container { position: absolute !important; overflow: hidden !important; display: inline !important; height: 1px !important; width: 1px !important; z-index: -1000 !important; padding: 0 !important; } #wpforms-34-field_5-container input { visibility: hidden; } #wpforms-conversational-form-page #wpforms-34-field_5-container label { counter-increment: none; }' ) );
+					document.head.appendChild( style );
+					document.currentScript?.remove();
+				} )();
+			</script></div><!-- .wpforms-field-container --><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="34"><input type="hidden" name="wpforms[time_token]" value="1792432295.d8db13bde20e1c236bb340777f802ef1e55bb2d484883f1e6f6763f814dbf5ec"><input type="hidden" name="page_title" value="Contact Us"><input type="hidden" name="page_url" value="/contact-us/"><input type="hidden" name="url_referer" value=""><input type="hidden" name="page_id" value="16"><input type="hidden" name="wpforms[post_id]" value="16"><button type="submit" name="wpforms[submit]" id="wpforms-submit-34" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Send Enquiry" aria-live="assertive" value="wpforms-submit">Send Enquiry</button><img src="/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div></form></div>  <!-- .wpforms-container -->            </div>
         </div>
+
     </div>
 </section>
 
@@ -216,23 +205,38 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <section class="bg-stone">
     <div class="container mx-auto w-full px-6 py-20 sm:px-10 lg:px-16">
         <div class="text-center text-charcoal text-4xl lg:text-6xl font-light font-display leading-[1.2]">Follow the flamboyance.</div>
-        <p class="text-center text-charcoal text-sm font-medium font-sans uppercase leading-7 tracking-wider py-6">@yellow.flamingo</p>
+        <p class="text-center text-charcoal text-sm font-medium font-sans uppercase leading-7 tracking-wider py-6"><a href="https://www.instagram.com/yellow.flamingo" target="_blank" rel="noopener noreferrer">@yellow.flamingo</a></p>
         <div class="pt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             <div class="">
-                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/1.webp">
+                <a href="https://www.instagram.com/yellow.flamingo" target="_blank" rel="noopener noreferrer">
+                    <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/1.webp">
+                </a>
             </div>
+
             <div class="">
-                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/2.webp">
+                <a href="https://www.instagram.com/yellow.flamingo" target="_blank" rel="noopener noreferrer">
+                    <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/2.webp">
+                </a>
             </div>
+
             <div class="">
-                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/3.webp">
+                <a href="https://www.instagram.com/yellow.flamingo" target="_blank" rel="noopener noreferrer">
+                    <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/3.webp">
+                </a>
             </div>
+
             <div class="">
-                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/4.webp">
+                <a href="https://www.instagram.com/yellow.flamingo" target="_blank" rel="noopener noreferrer">
+                    <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/4.webp">
+                </a>
             </div>
+
             <div class="">
-                <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/5.webp">
+                <a href="https://www.instagram.com/yellow.flamingo" target="_blank" rel="noopener noreferrer">
+                    <img class="" src="/wp-content/themes/yellow-flamingo/assets/images/insta/5.webp">
+                </a>
             </div>
+
         </div>
 
     </div>
@@ -307,7 +311,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/yellow-flamingo/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script id="yellow-flamingo-app-js" src="/wp-content/themes/yellow-flamingo/assets/js/app.js?ver=1.0.0"></script>
+<script id="yellow-flamingo-app-js" src="/wp-content/themes/yellow-flamingo/assets/js/app.min.js?ver=1.0.0"></script>
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="wpforms-validation-js" src="/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min.js?ver=1.21.0"></script>
+<script id="wpforms-mailcheck-js" src="/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min.js?ver=1.1.2"></script>
+<script id="wpforms-punycode-js" src="/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0"></script>
+<script id="wpforms-generic-utils-js" src="/wp-content/plugins/wpforms-lite/assets/js/share/utils.min.js?ver=2.0.2.2"></script>
+<script id="wpforms-js" src="/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms.min.js?ver=2.0.2.2"></script>
+<script id="wpforms-modern-js" src="/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms-modern.min.js?ver=2.0.2.2"></script>
+<script id="wpforms-analytics-js" src="/wp-content/plugins/wpforms-lite/assets/js/frontend/analytics.min.js?ver=2.0.2.2"></script>
+<script id="wpforms-address-field-js" src="/wp-content/plugins/wpforms-lite/assets/js/frontend/fields/address.min.js?ver=2.0.2.2"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
 </script>
@@ -315,6 +329,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*! This file is auto-generated */
 var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
 //# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_minimum_price":"Amount entered is less than the required minimum.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_min":"Please enter a value greater than or equal to {0}.","val_max":"Please enter a value less than or equal to {0}.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"","locale":"en","country":"","country_list_label":"Country list","wpforms_plugin_url":"\/wp-content\/plugins\/wpforms-lite\/","gdpr":"1","ajaxurl":"\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","nonce":"5751fecc59","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","css_vars":["field-border-radius","field-border-style","field-border-size","field-background-color","field-border-color","field-text-color","field-menu-color","label-color","label-sublabel-color","label-error-color","button-border-radius","button-border-style","button-border-size","button-background-color","button-border-color","button-text-color","page-break-color","background-image","background-position","background-repeat","background-size","background-width","background-height","background-color","background-url","container-padding","container-border-style","container-border-width","container-border-color","container-border-radius","field-size-input-height","field-size-input-spacing","field-size-font-size","field-size-line-height","field-size-padding-h","field-size-checkbox-size","field-size-sublabel-spacing","field-size-icon-size","label-size-font-size","label-size-line-height","label-size-sublabel-font-size","label-size-sublabel-line-height","button-size-font-size","button-size-height","button-size-padding-h","button-size-margin-top","container-shadow-size-box-shadow"],"isModernMarkupEnabled":"1","formErrorMessagePrefix":"Form error message","errorMessagePrefix":"Error message","submitBtnDisabled":"Submit button is disabled during form submission.","readOnlyDisallowedFields":["captcha","map","content","divider","hidden","html","entry-preview","pagebreak","payment-total","gdpr-checkbox"],"error_updating_token":"Error updating token. Please try again or contact support if the issue persists.","network_error":"Network error or server is unreachable. Check your connection or try again later.","token_cache_lifetime":"86400","hn_data":{"34":5},"analytics_composite_field_types":["name","address","date-time","email","password","paypal-commerce"],"analytics_base64":"1","address_field":{"list_countries_without_states":["GB","DE","CH","NL"]}}
+/* ]]> */
 </script>
 </body>
 
